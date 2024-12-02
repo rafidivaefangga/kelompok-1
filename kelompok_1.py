@@ -3,7 +3,7 @@ from tkinter import ttk, Text, StringVar, END, messagebox
 import random
 import os
 
-# Fungsi Timer Belajar
+# rafi diva efagga -> Fungsi Timer Belaja
 def start_timer():
     try:
         minutes = int(timer_entry.get())
@@ -21,7 +21,7 @@ def countdown(seconds):
         timer_label.config(text="Waktu Habis!")
         messagebox.showinfo("Notifikasi", "Timer selesai!")
 
-# Fungsi Catatan Harian
+# Anggi Puspita Ningrum ->Fungsi Catatan Harian
 def save_note():
     file_path = "catatan_harian.txt"
     with open(file_path, "w") as file:
@@ -36,7 +36,7 @@ def load_notes():
     except FileNotFoundError:
         messagebox.showerror("Error", "Tidak ada catatan yang ditemukan!")
 
-# Fungsi To-Do List
+# Arielva Simon Siahaan -> Fungsi To-Do List
 def add_task():
     task = task_entry.get()
     if task:
@@ -53,7 +53,7 @@ def mark_done():
 def clear_tasks():
     task_listbox.delete(0, END)
 
-# Fungsi Kalkulator
+# Dea Amanda -> Fungsi Kalkulator
 def add_to_expression(symbol):
     calc_entry_var.set(calc_entry_var.get() + symbol)
 
@@ -128,7 +128,7 @@ done_button.pack(pady=5)
 clear_button = ttk.Button(frame_todo, text="Hapus Semua", command=clear_tasks)
 clear_button.pack(pady=5)
 
-# Frame Kalkulator
+# Frame Kalkulator 
 frame_calculator = ttk.Frame(menu)
 menu.add(frame_calculator, text="Kalkulator")
 
